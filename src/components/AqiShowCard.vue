@@ -111,12 +111,13 @@ div.card-wrap{
   display: flex;
   align-items: start;
   width: 99%;
+  // border: 1px solid #f00;
   table{
     width: 20%;
     text-align: center;
     border:#aaa;
     overflow: hidden;
-    margin-right: 2rem;
+    margin-right: 3rem;
     color: #fff;
     th, td{
       width: 50%;

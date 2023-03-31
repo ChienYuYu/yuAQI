@@ -46,8 +46,6 @@ onMounted(() => {
 
 <style lang="scss" scoped>
 .wrapper {
-  width: calc(100vw - 200px);
-  // margin-left: 200px;
   padding: 2rem;
 
   .top-card{

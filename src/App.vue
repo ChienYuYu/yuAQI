@@ -75,9 +75,9 @@ header {
 .show-area {
   display: flex;
   position: fixed;
-  margin-top: 50px;
+  top: 50px;
   height: calc(100vh - 50px);
-  overflow: auto;
+  overflow:auto;
 
   .side-menu {
     position: fixed;
@@ -91,7 +91,6 @@ header {
       padding: 1.5rem 0;
 
       a {
-        // border: 1px solid #ddd;
         display: block;
         padding: 1.5rem 0;
         text-align: center;
@@ -110,7 +109,7 @@ header {
   }
 
   main {
+    width: calc(100vw - 200px);
     margin-left: 200px;
-    // border: 1px solid #fff;
   }
 }</style>

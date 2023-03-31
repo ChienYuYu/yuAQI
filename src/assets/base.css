@@ -10,6 +10,7 @@
 *{
 	text-decoration: none;
 	font-family: 'Noto Sans TC', sans-serif;
+	box-sizing: border-box;
 }
 
 html, body, div, span, applet, object, iframe,
