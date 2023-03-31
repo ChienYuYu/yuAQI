@@ -3,10 +3,12 @@ import AqiSelectCard from '../components/AqiSelectCard.vue';
 import AqiShowCard from '../components/AqiShowCard.vue';
 import axios from 'axios';
 import { ref, onMounted } from 'vue';
+import LoadingComponent from '../components/LoadingComponent.vue'
 
 const aqiData = ref([]);
 const filterAqiArr = ref([]) // 篩選後props到子元件
 const mySelect = ref('');
+const isLoading = ref(true);
 
 // emit從子元件取得選擇縣市
 function getEmit(value) {
@@ -24,6 +26,7 @@ async function getAqiData() {
   aqiData.value = res.data.records;
   // 先讓filterAqiArr有資料 props到子元件，顯示所有觀測站數據
   filterAqiArr.value = res.data.records;
+  isLoading.value = false;
 }
 
 onMounted(() => {
@@ -33,6 +36,7 @@ onMounted(() => {
 </script>
 
 <template>
+  <LoadingComponent v-show="isLoading" />
   <div class="wrapper">
     <!-- 選擇縣市卡片 -->
     <AqiSelectCard class="top-card" @my-select="getEmit" />
@@ -43,7 +47,7 @@ onMounted(() => {
 <style lang="scss" scoped>
 .wrapper {
   width: calc(100vw - 200px);
-  margin-left: 200px;
+  // margin-left: 200px;
   padding: 2rem;
 
   .top-card{

@@ -21,6 +21,11 @@ const router = createRouter({
       path: '/AQI_history',
       name: 'AQI_history',
       component: () => import('../views/AQIHistory.vue')
+    },
+    {
+      path: '/test',
+      name: 'test',
+      component: () => import('../views/TestView.vue')
     }
   ]
 })

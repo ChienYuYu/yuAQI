@@ -30,7 +30,7 @@ function getDate() {
           </li>
           <li><a href="#">link</a></li>
           <li><a href="#">link</a></li>
-          <li><a href="#">link</a></li>
+          <li><RouterLink to="/test">測試頁</RouterLink></li>
         </ul>
       </div>
       <main>
@@ -110,7 +110,7 @@ header {
   }
 
   main {
-    // margin-left: 200px;
+    margin-left: 200px;
     // border: 1px solid #fff;
   }
 }</style>
