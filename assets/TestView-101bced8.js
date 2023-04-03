@@ -1,0 +1,1 @@
+import{i as e,o as t,c as s,a as o}from"./index-a8e806b8.js";const a=o("h2",null,"this is test page",-1),n=[a],l={__name:"TestView",setup(c){return e(async()=>{}),(_,r)=>(t(),s("div",null,n))}};export{l as default};
