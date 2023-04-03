@@ -23,14 +23,12 @@ function getDate() {
       <div class="side-menu">
         <ul>
           <li>
-            <RouterLink to="/AQI">AQI</RouterLink>
+            <RouterLink to="/">AQI</RouterLink>
           </li>
           <li>
-            <RouterLink to="/AQI_history">歷史紀錄</RouterLink>
+            <RouterLink to="/AQI_history">統計資料</RouterLink>
           </li>
-          <li><a href="#">link</a></li>
-          <li><a href="#">link</a></li>
-          <li><RouterLink to="/test">測試頁</RouterLink></li>
+          <!-- <li><RouterLink to="/test">測試頁</RouterLink></li> -->
         </ul>
       </div>
       <main>
