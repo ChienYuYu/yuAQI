@@ -1,35 +1,25 @@
-# yuAQI
+# 簡易AQI儀表
 
-This template should help get you started developing with Vue 3 in Vite.
+資料來源 : 政府資料開放平台 <br>
+空氣品質指標(AQI) : https://data.gov.tw/dataset/40448  <br>
+日空氣品質指標(AQI) : https://data.gov.tw/dataset/40507 <br>
 
-## Recommended IDE Setup
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+![image](demo_pic/a001.png)
+![image](demo_pic/a002.png)
+![image](demo_pic/a003.png)
 
-## Customize configuration
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+<br>
 
-## Project Setup
+***
 
-```sh
-npm install
-```
+## 使用技術、套件
 
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
-```
+|  技術/套件   | 簡述  |
+| :----- | :----- |
+| vite Vue   | 以 Vue3 開發 SPA 網站 |
+| VueRouter  | 設定路由 |
+| vue-chartjs  | 設定圖表 |
+|axios|串接資料|
+***
